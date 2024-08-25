@@ -69,7 +69,6 @@ const voicemeeter = {
             VBVMR_Input_GetDeviceDescA: dll.func("long __stdcall VBVMR_Input_GetDeviceDescA(long zindex, _Out_ long * nType, _Out_ void * szDeviceName, _Out_ void * szHardwareId)"),
             VBVMR_Input_GetDeviceDescW: dll.func("long __stdcall VBVMR_Input_GetDeviceDescW(long zindex, _Out_ long * nType, _Out_ unsigned short * wszDeviceName, _Out_ unsigned short * wszHardwareId)"), // Not tested
 
-            VBVMR_SetCallback: dll.func("long __stdcall VBVMR_SetCallback(void * pCallback, void * pCallbackObject)"), // NOTE : Not tested
 
             // Macro buttons
             VBVMR_MacroButton_IsDirty: dll.func("long __stdcall VBVMR_MacroButton_IsDirty(void)"),
