@@ -1,10 +1,20 @@
 # Voicemeeter Node.js API
 
+![NPM](https://img.shields.io/npm/v/voicemeeter-rmc?style=for-the-badge)
+![Github Stars](https://img.shields.io/github/stars/Unknown-user-dev/VoiceMeeter-RMC?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues-raw/Unknown-user-dev/VoiceMeeter-RMC?style=for-the-badge)
+
 This project provides a Node.js API for interacting with Voicemeeter using the `VoicemeeterRemote64.dll` DLL. It allows you to control audio inputs and outputs, manipulate Voicemeeter parameters, and interact with macro buttons.
 
 ## 🚀 **Setup**
 
 To use this API, you must have Voicemeeter installed on your Windows system. The path to the DLL (`VoicemeeterRemote64.dll`) is determined automatically based on Voicemeeter's registry keys.
+
+And then, you can install the API using npm:
+
+```bash
+npm install voicemeeter-rmc
+```
 
 ## 📦 **Dependencies**
 
@@ -80,7 +90,7 @@ The API provides enums to help with configuration:
 Here's a basic example of how to use the API:
 
 ```javascript
-const voicemeeter = require('path/to/voicemeeter-api');
+const voicemeeter = require('voicemeeter-rmc');
 
 // Initialize the API
 await voicemeeter.init();
