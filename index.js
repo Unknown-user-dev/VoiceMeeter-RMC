@@ -483,21 +483,6 @@ stripParametersNames.forEach((name) => {
     }
 });
 
-/**
- * Mute a specific audio strip
- * @param {number} stripNumber - The index of the strip to mute (0-based)
- */
-voicemeeter.muteStrip = (stripNumber) => {
-    voicemeeter.setStripMute(stripNumber, true);
-};
-
-/**
- * Unmute a specific audio strip
- * @param {number} stripNumber - The index of the strip to unmute (0-based)
- */
-voicemeeter.unmuteStrip = (stripNumber) => {
-    voicemeeter.setStripMute(stripNumber, false);
-};
 
 
 
